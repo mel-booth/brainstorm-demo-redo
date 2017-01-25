@@ -18,5 +18,13 @@ const initialState = {
   ]
 }
 
-render(<App name='Brainstorm-Democracy-V2' />, document.querySelector('main'))
-console.log('welcome to Brainstorm-Democracy-V2')
+const store = createStore()
+
+const main = document.querySelector('main')
+
+store.subscribe(() => {
+  const state = store.getState()
+  render(
+    <App name='Brainstorm-Democracy-V2' />, main
+  )
+})

@@ -1,13 +1,16 @@
 /*Fonts:
 Colours:*/
 
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Dosis:400,600');
+
 
 main {
-  text-align: center;
+  font-family: 'Cutive Mono', monospace;
 }
 
 h1 {
-
+  font-family: 'Dosis', sans-serif;
+  text-transform: uppercase;
 }
 
 input {

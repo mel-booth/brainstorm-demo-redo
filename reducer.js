@@ -4,6 +4,9 @@ function reducer (state, action) {
   const newState = clone(state)
 
   switch (action.type) {
+    case 'INIT':
+      return newState
+      
     case 'ADD_IDEA':
       return newState
 

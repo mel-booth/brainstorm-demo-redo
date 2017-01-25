@@ -26,6 +26,8 @@ const main = document.querySelector('main')
 store.subscribe(() => {
   const state = store.getState()
   render(
-    <App name='Brainstorm-Democracy-V2' />, main
+    <App />, main
   )
 })
+
+store.dispatch({type: 'INIT'})

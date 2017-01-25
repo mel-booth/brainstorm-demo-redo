@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 const Idea = (props) => {
   return (
     <ul>
-      <li>Votes: {props.votes}</li>
+      <li>Idea: {props.details} Votes: {props.votes}</li>
     </ul>
   )
 }

@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
 
-class App extends Component {
-
-  constructor (props) {
-    super(props)
-  }
-
-  render () {
-    return <h1>Welcome to {this.props.name}</h1>
-  }
-
+const App = (props) => {
+  return (
+    <div>
+      <h1 id='heading'>Brainstorm Democracy</h1>
+      <input id='idea' type='text' placeholder='Enter your idea' />
+      <input className='btn' type='submit' value='Submit' onClick={(e) => {
+        props.dispatch({type:'ADD_IDEA', payload: {details: e.target.previousSibling.value, votes: 0}})
+      }} />
+    </div>
+  )
 }
 
 export default App

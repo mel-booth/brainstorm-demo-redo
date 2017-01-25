@@ -2,7 +2,9 @@ import React from 'react'
 import { render } from 'react-dom'
 import { createStore } from 'redux'
 
+import reducer from './reducer'
 import App from './components/app'
+import Ideas from './components/ideas'
 
 const initialState = {
   ideas: [
@@ -18,13 +20,18 @@ const initialState = {
   ]
 }
 
-const store = createStore()
+const store = createStore(reducer, initialState)
 
 const main = document.querySelector('main')
 
 store.subscribe(() => {
   const state = store.getState()
   render(
-    <App name='Brainstorm-Democracy-V2' />, main
-  )
+    <div>
+      <App state={state} dispatch={store.dispatch} />
+      <Ideas ideas={state.ideas} dispatch={store.dispatch} />
+    </div>,
+    main)
 })
+
+store.dispatch({type: 'INIT'})

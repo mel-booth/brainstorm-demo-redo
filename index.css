@@ -24,6 +24,11 @@ input {
   font-size: 1.2em
 }
 
+button {
+  height: 4em;
+
+}
+
 ul {
   display: block;
   list-style: none;
@@ -44,10 +49,6 @@ li {
 }
 
 .idea-input {
-
-}
-
-.btn {
 
 }
 

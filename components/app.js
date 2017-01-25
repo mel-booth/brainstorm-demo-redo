@@ -1,15 +1,13 @@
 import React, { Component } from 'react'
 
-class App extends Component {
-
-  constructor (props) {
-    super(props)
-  }
-
-  render () {
-    return <h1>Welcome to {this.props.name}</h1>
-  }
-
+const App = (props) => {
+  return (
+    <div>
+      <h1 id='heading'>Brainstorm Democracy</h1>
+      <input type='text' placeholder='Enter your idea' />
+      <input className='btn' type='submit' value='Submit' />
+    </div>
+  )
 }
 
 export default App

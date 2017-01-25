@@ -4,6 +4,7 @@ import { createStore } from 'redux'
 
 import reducer from './reducer'
 import App from './components/app'
+import Ideas from './components/Ideas'
 
 const initialState = {
   ideas: [
@@ -26,7 +27,10 @@ const main = document.querySelector('main')
 store.subscribe(() => {
   const state = store.getState()
   render(
-    <App />, main
+    <div>
+      <App state={state} dispatch={store.dispatch} />
+      <Ideas dispatch={store.dispatch} ideas={state.ideas}/>
+    </div>, main
   )
 })
 

@@ -8,7 +8,7 @@ const App = (props) => {
       <input id='idea-input' type='text' placeholder='Enter your idea' />
       <button id='btn' type='submit' value='Submit' onClick={(e) => {
         props.dispatch({type:'ADD_IDEA', payload: {details: e.target.previousSibling.value, votes: 0}})
-      }}>Submit Idea</button>
+      }}>Submit</button>
       </div>
     </div>
   )

@@ -18,7 +18,7 @@ const initialState = {
   ]
 }
 
-const store = createStore()
+const store = createStore(reducer, initialState)
 
 const main = document.querySelector('main')
 

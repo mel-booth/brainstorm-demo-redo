@@ -29,6 +29,7 @@ test('ADD_IDEA adds an idea to list', function (t) {
   const action = {type: 'ADD_IDEA', payload: { id: 4, details: 'Meditate', votes: 4 } }
 
   freeze(state)
+  freeze(action)
 
   //act
   const actual = reducer(state, action)

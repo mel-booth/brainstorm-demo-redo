@@ -1,3 +1,167 @@
+/*Fonts:
+Colours:*/
+
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Dosis:400,600');
+
+
 main {
+  font-family: 'Cutive Mono', monospace;
+}
+
+h1 {
+  font-family: 'Dosis', sans-serif;
+  text-transform: uppercase;
+  font-size: 2.2em;
   text-align: center;
+  margin-bottom: 1.2em;
+}
+
+input {
+  display: block;
+  line-height: 3.5em;
+  width: 80%;
+  margin: 0 auto;
+  padding: .6em;
+  margin-bottom: 1.2em;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 1.2em;
+  border-radius: .2em;
+}
+
+button {
+  float: right;
+  height: 2.5em;
+  width: 25%;
+  font-size: .8em;
+  font-family: 'Cutive Mono', monospace;
+  background-color: inherit;
+  border: solid .5px black;
+  border-radius: 1em;
+  margin-bottom: 2em;
+  margin-right: 1.9em;
+
+}
+
+ul {
+  display: block;
+  list-style: none;
+  font-size: 1.2em;
+  width: 100%;
+  padding-left: 0;
+  margin-top: .5em;
+  margin-bottom: .5em;
+
+}
+
+li {
+  width: 80%;
+  margin: 0 auto;
+  border: solid .5px black;
+  border-radius: .2em;
+  padding: .4em;
+}
+
+li:hover {
+  color: red;
+}
+
+.idea-input {
+  overflow: hidden;
+}
+
+#idea {
+  padding-left: .6em;
+  text-align: right;
+}
+
+#votes {
+  font-size: 1.5em;
+  color: red;
+  font-weight: bold;
+}
+
+#vote-text {
+  font-size: .5em;
+  padding-right: 1em;
+}
+
+/* Mobile first queries */
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+  button {
+    margin-right: 2.9em;
+  }
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  button {
+    display: block;
+    margin: 0 auto;
+    float: none;
+    width: 20%;
+    margin-bottom: 2.5em;
+  }
+
+  ul {
+    font-size: 1.6em;
+    margin-top: .8em;
+    margin-bottom: .8em;
+
+  }
+
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+
+  input {
+    width: 70%;
+  }
+  button {
+    display: block;
+    margin: 0 auto;
+    float: none;
+    width: 15%;
+    margin-bottom: 2.5em;
+  }
+
+  ul {
+    font-size: 1.6em;
+    margin-top: .8em;
+    margin-bottom: .8em;
+  }
+
+  li {
+    width: 70%;
+  }
+
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  input {
+    width: 65%;
+  }
+
+  li {
+    width: 65%;
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+
+  input {
+    width: 60%;
+  }
+
+  button {
+    width: 12%;
+  }
+
+  li {
+    width: 60%;
+  }
 }

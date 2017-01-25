@@ -1,5 +1,6 @@
 import test from 'tape'
 import freeze from 'deep-freeze'
+import reducer from '../reducer'
 
 
 test('testing Brainstorm-Democracy-V2', function (t) {

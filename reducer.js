@@ -6,10 +6,14 @@ function reducer (state, action) {
   switch (action.type) {
     case 'INIT':
       return newState
-      
-    case 'ADD_IDEA':
-      return newState
 
+    case 'ADD_IDEA':
+      let votes = newState.votes
+      let ideas = newState.ideas
+      if(!ideas.includes(action.payload)) {
+        ideas.push(action.payload)
+        return newState
+    }
     case 'INCREMENT_VOTE':
       return newState
 

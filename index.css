@@ -80,16 +80,80 @@ li {
 /* Mobile first queries */
 
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 400px) {
+  button {
+    margin-right: 2.9em;
+  }
+}
 
 /* Larger than phablet */
-@media (min-width: 550px) {}
+@media (min-width: 550px) {
+  button {
+    display: block;
+    margin: 0 auto;
+    float: none;
+    width: 20%;
+    margin-bottom: 2.5em;
+  }
+
+  ul {
+    font-size: 1.6em;
+    margin-top: .8em;
+    margin-bottom: .8em;
+
+  }
+
+}
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+
+  input {
+    width: 70%;
+  }
+  button {
+    display: block;
+    margin: 0 auto;
+    float: none;
+    width: 15%;
+    margin-bottom: 2.5em;
+  }
+
+  ul {
+    font-size: 1.6em;
+    margin-top: .8em;
+    margin-bottom: .8em;
+  }
+
+  li {
+    width: 70%;
+  }
+
+}
 
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+  input {
+    width: 65%;
+  }
+
+  li {
+    width: 65%;
+  }
+}
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+  input {
+    width: 60%;
+  }
+
+  button {
+    width: 12%;
+  }
+
+  li {
+    width: 60%;
+  }
+}

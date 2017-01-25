@@ -3,7 +3,7 @@
 
 Group brainstorming - enter your ideas - then click them to vote!
 
-[Demo here]
+[Demo here](http://www.melbooth.co.nz/brainstorm-demo-redo/)
 
 ## how
 

@@ -33,8 +33,7 @@ button {
   height: 2.5em;
   width: 25%;
   font-size: .8em;
-  font-family: 'Dosis', sans-serif;
-  text-transform: uppercase;
+  font-family: 'Cutive Mono', monospace;
   background-color: inherit;
   border: solid .5px black;
   border-radius: 1em;

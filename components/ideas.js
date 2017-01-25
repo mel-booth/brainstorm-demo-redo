@@ -1,15 +1,7 @@
 import React, { Component } from 'react'
+import Idea from './idea'
 
-
-const Idea = (props) => {
-  return (
-    <ul>
-      <li>Votes: {props.votes}</li>
-    </ul>
-  )
-}
-
-const Ideas = (props) => {
+export const Ideas = (props) => {
   return (
     <div>
       {props.ideas.map((idea, index) => {
